@@ -9,6 +9,12 @@
 # value types according to the spec
 class CreateCostumes < ActiveRecord::Migration
   def change
+    create_table :costumes do |c|
+      c.string :name
+      c.numeric :price
+      c.string :image_url
+      c.string :size
+      c.
     add_column :name, :price, :image_url, :size, :date_created, :date_updated
   end
 end

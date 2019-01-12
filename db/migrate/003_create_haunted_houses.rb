@@ -4,9 +4,9 @@ class CreateHauntedHouses < ActiveRecord::Migration[4.2]
     create_table :costume_stores do |t|
       t.string :name
       t.string :location
-      t.integer :costume_inventory
-      t.numeric :num_of_employees
-      t.timestamps
+      t.string :theme
+      t.numeric :price
+
     end
   end
 end

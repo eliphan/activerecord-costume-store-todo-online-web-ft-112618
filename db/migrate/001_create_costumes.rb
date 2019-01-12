@@ -16,6 +16,5 @@ class CreateCostumes < ActiveRecord::Migration
       c.string :size
       c.string :date_created
       c.strong :date_updated
-    add_column :name, :price, :image_url, :size, :date_created, :date_updated
   end
 end
